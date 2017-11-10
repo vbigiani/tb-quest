@@ -2,7 +2,7 @@ IF
   Global("tb#spawnedMprilla","global",0)
 THEN
     RESPONSE #100
-    	     CreateCreature("tb#mprila",[4600.100],7)
+    	     CreateCreature("tb#mpril",[4600.100],7)
   	     SetGlobal("tb#spawnedMprilla","global",1)
   	     Continue()
 END
