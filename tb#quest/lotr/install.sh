@@ -1,7 +1,11 @@
 #!/bin/sh
 cd override
-./tisunpack -s -s TB#001.tiz
-rm TB#001.tiz
-rm tisunpack
-rm tisunpack.exe
-
+if [ -f ./tisunpack ]
+then
+  ./tisunpack -s -s -o tb#001.tis tb#001.tiz
+else
+  tisunpack -s -s -o tb#001.tis tb#001.tiz
+fi
+rm -f tb#001.tiz
+rm -f tisunpack
+rm -f tisunpack.exe
