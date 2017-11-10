@@ -46,7 +46,7 @@ IF
 THEN
     RESPONSE #100
     	     SetGlobal("rage","locals",5)
-    	     SpellNoDecRES("tb#tles",Myself)//Refinements Tireless Rage
+    	     SpellNoDecRES("tg#tles",Myself)//Refinements Tireless Rage
     	     SetGlobalTimer("cast","locals",6)
     	     SetGlobalTimer("rage","locals",60)
 END
