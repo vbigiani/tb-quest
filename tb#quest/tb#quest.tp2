@@ -5,7 +5,7 @@ NO_IF_EVAL_BUG
 
 README ~tb#quest/readme-TB#Quest-%LANGUAGE%.htm~ ~tb#quest/readme-TB#Quest.htm~
 
-VERSION 2.04
+VERSION 2.05
 
 AUTO_TRA ~tb#quest/english~
 AUTO_TRA ~tb#quest/%s~
@@ -114,6 +114,8 @@ ALWAYS
 			 UNLESS ~LeaveAreaLUAEntry(S:Area*,S:Entry*,P:Point*,I:Face*)~
 		APPEND ~ACTION.IDS~ ~351 LeaveAreaLUAPanicEntry(S:Area*,S:Entry*,P:Point*,I:Face*)~
 			 UNLESS ~LeaveAreaLUAPanicEntry(S:Area*,S:Entry*,P:Point*,I:Face*)~
+			 
+		APPEND ~STATS.IDS~ ~185 WIZARD_PROTECTION_FROM_MAGIC_WEAPONS~  UNLESS ~WIZARD_PROTECTION_FROM_MAGIC_WEAPONS~
 
 		//Scriptable Spells, courthesy of Cirrerek
 		  COPY_EXISTING
